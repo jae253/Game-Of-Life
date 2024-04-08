@@ -1,0 +1,52 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Game of Life</title>
+  
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./timer.js"></script>
+    <script type="text/javascript" src="./Automata.js"></script>
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./util.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+<body>
+    <div>
+        <canvas id="gameWorld" width="800" height="800" style="background: white; border: 1px solid black" tabindex="0" autofocus></canvas>
+        <br><b><i>RULE ADJUSTMENT:</i></b>
+        <table id="ruleAdjustment" style="border: 1px solid black">
+            <tr style="border: 1px solid black">
+                <td><b>Birth Rules</b></td>
+                <td><input type="checkbox" id="live1" value="1">1</td>
+                <td><input type="checkbox" id="live2" value="2">2</td>
+                <td><input type="checkbox" id="live3" value="3" checked>3</td>
+                <td><input type="checkbox" id="live4" value="4">4</td>
+                <td><input type="checkbox" id="live5" value="5">5</td>
+                <td><input type="checkbox" id="live6" value="6">6</td>
+                <td><input type="checkbox" id="live7" value="7">7</td>
+                <td><input type="checkbox" id="live8" value="8">8</td>
+            </tr>
+            <tr style="border: 1px solid black">
+                <td><b>Sustain Rules</b></td>
+                <td><input type="checkbox" id="sustain1" value="1">1</td>
+                <td><input type="checkbox" id="sustain2" value="2" checked>2</td>
+                <td><input type="checkbox" id="sustain3" value="3" checked>3</td>
+                <td><input type="checkbox" id="sustain4" value="4">4</td>
+                <td><input type="checkbox" id="sustain5" value="5">5</td>
+                <td><input type="checkbox" id="sustain6" value="6">6</td>
+                <td><input type="checkbox" id="sustain7" value="7">7</td>
+                <td><input type="checkbox" id="sustain8" value="8">8</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div>
+        <div id="ticks">Ticks: 0</div>
+        <label for="speed">Fast</label>
+        <input type="range" id="speed" min="1" max="120" value="30" step="1">
+        <label for="speed">Slow</label>
+    </div>
+</body>
+</html>
